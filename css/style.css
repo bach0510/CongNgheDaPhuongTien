@@ -81,7 +81,7 @@ h1, h2, h3, h4, h5, h6, figure {
 #fh5co-header {
   /* background: #2c9ecb; */
   background: rgb(2,0,36);
-background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 0%, rgba(7,59,154,0.788953081232493) 0%, rgba(3,155,218,1) 100%, rgba(7,20,171,1) 100%);
+  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 0%, rgba(7,59,154,0.788953081232493) 0%, rgba(3,155,218,1) 0%, rgba(201,205,255,1) 100%);
   height: 800px;
   background-size: cover;
   background-repeat: no-repeat;
