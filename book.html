@@ -7,7 +7,7 @@
     <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge"> -->
     <title>Children's books</title>
 
-    <link rel="shortcut icon" href="images/logo_tab.png">
+    <link rel="shortcut icon" href="images/logo.png">
     <link href="https://fonts.googleapis.com/css?family=Bungee+Shade" rel="stylesheet">
 
     <!-- CSS -->
@@ -22,50 +22,71 @@
 </head>
 
 <body>
-    <header id="fh5co-header" style="background-image: url(images/bg_header_2.jpg)">
+    <header id="fh5co-header" class="animate-box">
         <div class="overlay"></div>
         <div class="container">
-            <div class="row" style="margin-top: 87px">
+            <div class="row" style="margin-top: 50px">
                 <div class="col-md-12 text-center">
-                    <div class="col-md-4 col-ms-4 text-right">
-                        <a href="book.html"><img src="images/logo.png" alt="Logo"></a>
+                    <div class="col-md-3 col-ms-4 text-right" >
+                        <a href="book.html"><img class="custom-icon" src="images/logo.png" alt="Logo"></a>
                     </div>
-                    <div class="col-md-8 col-ms-8 text-left" style="margin-top: 20px">
-                        <h1 id="fh5co-logo" class="cursive-font"><a href="book.html">Children's book</a></h1>
+                    <div class="col-md-9 col-ms-9 text-left animate-box" style="margin-top: 20px">
+                        <h1 id="fh5co-logo" class="cursive-font"><a href="book.html">Hàng Sách Hà Nội Xưa</a></h1>
                     </div>
 
                 </div>
-                <div class="col-md-12 text-center">
-                    <div class="row cursive-font" style="color: rgb(250, 250, 255); font-weight:bold;">
-                        <div class="col-md-4 col-sm-6" style="cursor: pointer">TRANG CHỦ</div>
-                        <div class="col-md-1 col-sm-6" style="cursor: pointer">TÁC GIẢ</div>
-                        <div class="col-md-4 col-sm-6" style="cursor: pointer">GIỚI THIỆU</div>
-                        <div class="col-md-1 col-sm-6" style="cursor: pointer">TIN TỨC</div>
+                <div class="col-md-12 text-center" style="margin-top: 30px;">
+                    <div class="row header-text animate-box " style="color: rgb(250, 250, 255); font-weight:bold;">
+                        <div class="col-md-4 col-sm-6 header-text" style="cursor: pointer">TRANG CHỦ</div>
+                        <div class="col-md-4 col-sm-6 header-text" style="cursor: pointer">GIỚI THIỆU</div>
+                        <div class="col-md-4 col-sm-6 header-text" style="cursor: pointer">LIÊN HỆ</div>
                     </div>
                 </div>
             </div>
 
             <div class="row">
-                <div class="col-md-6 col-sm-6">
+                <div class="col-md-6 col-sm-6 ">
                     <div class="intro">
-                        <h2>Shin-cậu bé bút chì là một bộ truyện tranh do Usui Yoshito
-                            sáng tác và minh họa. Bộ truyện đã được xuất bản tại hơn
-                            30 quốc gia trên thế giới và là bộ truyện tranh được
-                            yêu thích nhất dành cho trẻ em hiện nay.
+                        <h1 style="color: white;" class="cursive-font animate-box">Đôi nét về Hà Nội Xưa
+                        </h1>
+                        <h2 class="cursive-font animate-box">Hà Nội xưa là nơi mà bạn có thể tìm về thế giới cổ tích xa xưa hay những cuốn truyện của nhà xuất bản Kim Đồng – Nhà xuất bản Mĩ Thuật .Tất cả những cuốn sách được trang trí đẹp mắt, nội dung hấp dẫn được rất nhiều bạn yêu thích.Những cuốn sách trên được sắp xếp dưới mô hình ngôi nhà. Một ngôi nhà tri thức mà tất cả chúng ta cùng vào trong để khám phá ...
                         </h2>
-                        <p>
-                            <br>
-                            <a href="#" class="btn btn-primary btn-lg btn-hardbound">Đặt mua online ngay <span
-                                    class="price">99.000đ</span></a> <span class="fh5co-block">&nbsp;&nbsp;
-                                hoặc &nbsp;&nbsp;</span> <a href="#" class="btn-ebook" style="color: rgb(9, 228, 155)">Đến cửa
-                                hàng gần nhất</a>
-                        </p>
                     </div>
                 </div>
                 <div class="col-md-6 col-sm-6">
                     <figure class="fh5co-intro-img">
-                        <img class="img-1 animate-box" src="images/anh1.jpg" alt="Shin-cậu bé bút chì 1">
-                        <img class="img-2 animate-box" src="images/anh2.jpg" alt="Shin-cậu bé bút chì 2">
+                        <div class="video-player animate-box" style="display: flex;width: 500px;">
+                            <video
+                              src="media/My_Movie.mp4"
+                              class="video"
+                            ></video>
+                      
+                            <div class="player-controls">
+                              <div class="video-progress">
+                                <div class="video-progress-filled"></div>
+                              </div>
+                      
+                              <button class="play-button" title="Play">►</button>
+                      
+                              <input
+                                type="range"
+                                class="volume"
+                                min="0"
+                                max="1"
+                                step="0.01"
+                                value="1"
+                              />
+                      
+                              <div class="time">
+                                <span class="current">0:00</span> / <span class="duration">0:00</span>
+                              </div>
+                            </div>
+                          </div>
+                        <!-- <video width="500" height="240" class="animate-box" controls>
+                            <source src=>
+                        </video> -->
+                        <!-- <img class="img-1 animate-box" src="images/anh1.jpg" alt="Shin-cậu bé bút chì 1"> -->
+                        <!-- <img class="img-2 animate-box" src="images/anh2.jpg" alt="Shin-cậu bé bút chì 2"> -->
                     </figure>
                 </div>
             </div>
@@ -432,6 +453,7 @@
 	<script src="js/jquery.waypoints.min.js"></script>
 	<script src="js/owl.carousel.min.js"></script> 
 	<script src="js/main.js"></script>
+	<script src="js/custom-script.js"></script>
 </body>
 
 </html>
