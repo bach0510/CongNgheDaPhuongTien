@@ -767,8 +767,8 @@ h1, h2, h3, h4, h5, h6, figure {
   border-color: #52d3aa;
 }
 
-.cursive-font {
-  font-family: "Bradley Hand", cursive;
+.custom-font {
+  font-family: "Times New Roman", Times, serif;
 }
 
 .row-pb-md {
