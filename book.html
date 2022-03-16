@@ -22,24 +22,25 @@
 </head>
 
 <body>
-    <header id="fh5co-header" class="animate-box" style="background-image: url(images/header-background.jpg);">
+  
+  <header id="fh5co-header" class="animate-box" style="background-image: url(images/header-background.jpg);">
         <div class="overlay"></div>
         <div class="container">
             <div class="row" style="margin-top: 50px">
                 <div class="col-md-12 text-center">
-                    <div class="col-md-3 col-ms-4 text-right" >
-                        <a href="book.html"><img class="custom-icon" src="images/logo.png" alt="Logo"></a>
+                    <div class="col-md-3 col-ms-4 text-right image-hover" >
+                        <a href="book.html"><img class="custom-icon image-hover" src="images/logo.png" style="border-radius: 10%;" alt="Logo"></a>
                     </div>
                     <div class="col-md-9 col-ms-9 text-left animate-box" style="margin-top: 20px">
-                        <h1 id="fh5co-logo" class="cursive-font"><a href="book.html">Hàng Sách Hà Nội Xưa</a></h1>
+                        <h1 id="fh5co-logo" class="cursive-font text-outline"><a href="book.html" >Hàng Sách Hà Nội Xưa</a></h1>
                     </div>
 
                 </div>
                 <div class="col-md-12 text-center" style="margin-top: 30px;">
                     <div class="row header-text animate-box " style="color: rgb(250, 250, 255); font-weight:bold;">
-                        <div class="col-md-4 col-sm-6 header-text" style="cursor: pointer">TRANG CHỦ</div>
-                        <div class="col-md-4 col-sm-6 header-text" style="cursor: pointer">GIỚI THIỆU</div>
-                        <div class="col-md-4 col-sm-6 header-text" style="cursor: pointer">LIÊN HỆ</div>
+                        <div class="col-md-4 col-sm-6 header-text text-outline" href="#" style="cursor: pointer">TRANG CHỦ</div>
+                        <div class="col-md-4 col-sm-6 header-text text-outline" onclick="scrollToBook()" style="cursor: pointer">NỔI BẬT</div>
+                        <div class="col-md-4 col-sm-6 header-text text-outline" onclick="scrollToBottom()" style="cursor: pointer">LIÊN HỆ</div>
                     </div>
                 </div>
             </div>
@@ -47,9 +48,9 @@
             <div class="row">
                 <div class="col-md-6 col-sm-6 ">
                     <div class="intro">
-                        <h1 style="color: #ff9700;" class="cursive-font animate-box">Đôi nét về Hà Nội Xưa
+                        <h1 style="color: white" class="cursive-font animate-box text-outline">Đôi nét về Hà Nội Xưa
                         </h1>
-                        <p class="cursive-font animate-box" style="color: white">Hà Nội xưa là nơi mà bạn có thể tìm về thế giới cổ tích xa xưa hay những cuốn truyện của nhà xuất bản Kim Đồng – Nhà xuất bản Mĩ Thuật .Tất cả những cuốn sách được trang trí đẹp mắt, nội dung hấp dẫn được rất nhiều bạn yêu thích.Những cuốn sách trên được sắp xếp dưới mô hình ngôi nhà. Một ngôi nhà tri thức mà tất cả chúng ta cùng vào trong để khám phá ...
+                        <p class="cursive-font animate-box text-outline" style="color: white">Hà Nội xưa là nơi mà bạn có thể tìm về thế giới cổ tích xa xưa hay những cuốn truyện của nhà xuất bản Kim Đồng – Nhà xuất bản Mĩ Thuật .Tất cả những cuốn sách được trang trí đẹp mắt, nội dung hấp dẫn được rất nhiều bạn yêu thích.Những cuốn sách trên được sắp xếp dưới mô hình ngôi nhà. Một ngôi nhà tri thức mà tất cả chúng ta cùng vào trong để khám phá ...
                         </p>
                         <p>
                             <br>
@@ -102,64 +103,7 @@
             <div class="col-md-12 text-center animate-box" style="margin-bottom: 5em;">
                 <h1>CÁC ĐẦU SÁCH NỔI BẬT</h1>
             </div>
-            <!-- <div class="row row-pb-md">
-                <div class="col-md-4">
-                    <div class="review text-center">
-                        <figure>
-                            <img src="images/user1.png" alt="user">
-                        </figure>
-                        <span>Hoàng Long</span>
-                        <span class="star">
-                            <i class="icon-star colored"></i>
-                            <i class="icon-star colored"></i>
-                            <i class="icon-star colored"></i>
-                            <i class="icon-star colored"></i>
-                            <i class="icon-star colored"></i>
-                        </span>
-                        <blockquote>
-                            <p>&ldquo;Nét vẽ rất đáng yêu. Nội dung thì gần gũi. Rất nên mua để xả stress&rdquo;</p>
-                        </blockquote>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="review text-center">
-                        <figure>
-                            <img src="images/user2.png" alt="user">
-                        </figure>
-                        <span>Đức Duy </span>
-                        <span class="star">
-                            <i class="icon-star colored"></i>
-                            <i class="icon-star colored"></i>
-                            <i class="icon-star colored"></i>
-                            <i class="icon-star colored"></i>
-                            <i class="icon-star"></i>
-                        </span>
-                        <blockquote>
-                            <p>&ldquo;Nội dung ổn, có một số câu chuyện thực sự rất hài hước và đáng yêu, hình vẽ vui
-                                nhộn, là một sự lựa chọn tốt để giải trí sau những giờ lao động đầu óc căng thẳng, có
-                                điều giá hơi cao&rdquo;</p>
-                        </blockquote>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="review active text-center">
-                        <figure>
-                            <img src="images/user3.png" alt="user">
-                        </figure>
-                        <span>Trần Linh </span>
-                        <span class="star">
-                            <i class="icon-star colored"></i>
-                            <i class="icon-star colored"></i>
-                            <i class="icon-star colored"></i>
-                            <i class="icon-star colored"></i>
-                            <i class="icon-star colored"></i>
-                        </span>
-                        <blockquote>
-                            <p>&ldquo;Không biết nói gì hơn truyện hay lý do mà tôi mua thêm số mới&rdquo;</p>
-                        </blockquote>
-                    </div>
-                </div>
-            </div> -->
+
             <!-- Thần đồng đất việt -->
             <div class="row fh5co-feature" style="display: flex;">
                 <div class="col-md-6 col-md-push-6">
@@ -205,13 +149,14 @@
                 <div class="col-md-6">
                     <div class="fh5co-img text-left">
                         <figure class="fh5co-figure image-hover animate-box" style="position: relative;display: flex;">
-                            <img class="image1 fadeInUp " src="images/tyquay1.png" style="height: 400px;" alt="ảnh không tồn tại">
-                            <img class="image2 fadeInUp " src="images/tyquay2.jpg" style="height:400px;" alt="ảnh không tồn tại">
-                            <img class="image3 fadeInUp " src="images/tyquay4.jpg" style="height:400px;" alt="ảnh không tồn tại">
+                            <img class="image1 fadeInUp image-hover" src="images/tyquay1.png" style="height: 400px;" alt="ảnh không tồn tại">
+                            <img class="image2 fadeInUp image-hover" src="images/tyquay2.jpg" style="height:400px;" alt="ảnh không tồn tại">
+                            <img class="image3 fadeInUp image-hover" src="images/tyquay4.jpg" style="height:400px;" alt="ảnh không tồn tại">
                         </figure>
                     </div>
                 </div>
             </div>
+            <!-- nhật ký chú bé nhút nhát -->
             <div class="row fh5co-feature last-feature">
                 <div class="col-md-6 col-md-push-6">
                     <div class="fh5co-copy">
@@ -230,13 +175,14 @@
                 <div class="col-md-6 col-md-pull-6">
                     <div class="fh5co-img text-right">
                         <figure class="fh5co-figure image-hover animate-box" style="position: relative;display: flex;">
-                            <img class="image1 fadeInUp " src="images/chubenhutnhat1.jpg" style="height: 400px;" alt="ảnh không tồn tại">
-                            <img class="image2 fadeInUp " src="images/chubenhutnhat2.jpg" style="height:400px;" alt="ảnh không tồn tại">
-                            <img class="image3 fadeInUp " src="images/chubenhutnhat3.jpg" style="height:400px;" alt="ảnh không tồn tại">
+                            <img class="image1 fadeInUp image-hover" src="images/chubenhutnhat1.jpg" style="height: 400px;" alt="ảnh không tồn tại">
+                            <img class="image2 fadeInUp image-hover" src="images/chubenhutnhat2.jpg" style="height:400px;" alt="ảnh không tồn tại">
+                            <img class="image3 fadeInUp image-hover" src="images/chubenhutnhat3.jpg" style="height:400px;" alt="ảnh không tồn tại">
                         </figure>
                     </div>
                 </div>
             </div>
+            <!-- Không gia đình -->
             <div class="row fh5co-feature fh5co-reverse">
                 <div class="col-md-6">
                     <div class="fh5co-copy">
@@ -254,180 +200,141 @@
                 <div class="col-md-6">
                     <div class="fh5co-img text-left">
                         <figure class="fh5co-figure image-hover animate-box" style="position: relative;display: flex;">
-                            <img class="image1 fadeInUp " src="images/khonggiadinh.jpg" style="height: 400px;" alt="ảnh không tồn tại">
-                            <img class="image2 fadeInUp " src="images/khonggiadinh2.jpg" style="height:400px;" alt="ảnh không tồn tại">
+                            <img class="image1 fadeInUp image-hover" src="images/khonggiadinh.jpg" style="height: 400px;" alt="ảnh không tồn tại">
+                            <img class="image2 fadeInUp image-hover" src="images/khonggiadinh2.jpg" style="height:400px;" alt="ảnh không tồn tại">
                         </figure>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Những tấm lòng cao cả -->
+            <div class="row fh5co-feature last-feature">
+                <div class="col-md-6 col-md-push-6">
+                    <div class="fh5co-copy">
+                        <div class="fh5co-copy-inner animate-box" style="vertical-align: top;">
+                            <h2>Những tấm lòng cao cả (Edomondo De Amicis)</h2>
+                            <p> Đây thực sự là cuốn sách không thể thiếu trên giá sách của trẻ. 
+                                Tiểu thuyết được xuất bản lần đầu tiên vào ngày 18 tháng 10 năm 1886, 
+                                "Những tấm lòng cao cả" đã đưa tên tuổi của nhà văn Edomondo De Amicis vươn xa hơn nữa, 
+                                tuy đã ra đời từ lâu nhưng vẫn để lại dấu ấn không thể phai mờ trong lòng độc giả - nhất là các bạn thiếu nhi.
+                                <br>
+                                Chuyện kể về cậu bé người Ý tên là En-ri-cô, 
+                                cậu bé hằng ngày đều ghi lại những sự việc, 
+                                cuộc sống xung quanh mình và cả những câu chuyện cảm động mà cậu đã được nghe, 
+                                được thấy và có khi cậu là nhân vật chính vào cuốn nhật kí mà cậu bắt đầu viết từ năm lớp ba. 
+                                Mỗi câu chuyện ý nghĩa về tình thầy trò, tình cảm gia đình, bạn bè là một bài học bổ ích cho trẻ, dạy trẻ cách làm người, 
+                                cách đối nhân xử thế trong xã hội.
+
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-md-pull-6">
+                    <div class="fh5co-img text-right">
+                        <figure class="fh5co-figure image-hover animate-box" style="position: relative;display: flex;">
+                            <img class="image1 fadeInUp image-hover" src="images/nhungtamlongcaoca1.jpg" style="height: 400px;" alt="ảnh không tồn tại">
+                            <img class="image2 fadeInUp image-hover" src="images/nhungtamlongcaoca2.jpg" style="height:400px;" alt="ảnh không tồn tại">
+                        </figure>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+         <!-- slide  -->
+         <div class="fh5co-testimonial" style="padding: 0;">
+            <div class="container">
+                <div class="row text-center fh5co-heading" style="margin-top: 50px;">
+                    <h2>Một vài nhận xét của người đọc về nội dung và chất lượng sách</h2>
+                </div>
+                <div class="owl-carousel owl-carousel-fullwidth">
+                    <div class="item">
+                        <div class="testimony-slide active text-center">
+                            <figure>
+                                <img src="images/usericon.png" alt="user">
+                            </figure>
+                            <span>Xuân Bách</span>
+
+                            <blockquote>
+                                <p>"Quá tuyệt vời ! nội dung rất ý nghĩa và sâu sắc "</p>
+                            </blockquote>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="testimony-slide active text-center">
+                            <figure>
+                                <img src="images/usericon.png" alt="user">
+                            </figure>
+                            <span>Xuân Bách clone 1</span>
+  
+                            <blockquote>
+                                <p>"Mình hay đọc bộ nhật ký chú bé nhút nhát và nó rất hay XD"</p>
+                            </blockquote>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="testimony-slide active text-center">
+                            <figure>
+                                <img src="images/usericon.png" alt="user">
+                            </figure>
+                            <span>Xuân Bách clone 2</span>
+
+                            <blockquote>
+                                <p>"Sách mới , nội dung hay và ý nghĩa , đưa đc đến cho người đọc nhiều thông điệp "</p>
+                            </blockquote>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
 
         <div class="fh5co-testimonial">
-            <div class="container">
-                <div class="row text-center fh5co-heading">
-                    <h2>Một vài nhận xét của độc giả</h2>
-                </div>
-                <div class="owl-carousel owl-carousel-fullwidth">
-                    <div class="item">
-                        <div class="testimony-slide active text-center">
-                            <figure>
-                                <img src="images/user1.png" alt="user">
-                            </figure>
-                            <span>Quốc Anh</span>
-                            <span class="review">
-                                <i class="icon-star colored"></i>
-                                <i class="icon-star colored"></i>
-                                <i class="icon-star colored"></i>
-                                <i class="icon-star colored"></i>
-                                <i class="icon-star"></i>
-                            </span>
-                            <blockquote>
-                                <p>&ldquo;Sách mới đẹp, có thước đánh dấu trang hình Doremon con rất thích, mỗi tội đọc
-                                    ngược nên chưa quen&rdquo;</p>
-                            </blockquote>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="testimony-slide active text-center">
-                            <figure>
-                                <img src="images/user2.png" alt="user">
-                            </figure>
-                            <span>Trọng Thụy</span>
-                            <span class="review">
-                                <i class="icon-star colored"></i>
-                                <i class="icon-star colored"></i>
-                                <i class="icon-star colored"></i>
-                                <i class="icon-star colored"></i>
-                                <i class="icon-star colored"></i>
-                            </span>
-                            <blockquote>
-                                <p>&ldquo;Mình rất thích đọc truyện shin cậu bé bút chì nên nghe nói ra tập đặc biệt là
-                                    mình liền mua về đọc thử, toàn là những câu chuyện về cu shin và những sự việc xung
-                                    quanh cậu nhóc tuy nhiên mình thấy quyển này không buồn cười cho lắm nếu buồn cười
-                                    nhất chắc là lúc cu shin ngồi buôn điện thoại nhỏ mà nói giọng y như người lớn làm
-                                    cho bố Shin tưởng mẹ Shin thế nào ngoài ra còn những chuyện rất hay và ý nghĩa khác
-                                    nhưng mình thích buồn cười hơn nhưng truyện cũng khá hấp dẫn. Cảm ơn tác giả
-                                    nhiều.&rdquo;</p>
-                            </blockquote>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="testimony-slide active text-center">
-                            <figure>
-                                <img src="images/user3.png" alt="user">
-                            </figure>
-                            <span>Đức Thành</span>
-                            <span class="review">
-                                <i class="icon-star colored"></i>
-                                <i class="icon-star colored"></i>
-                                <i class="icon-star colored"></i>
-                                <i class="icon-star colored"></i>
-                                <i class="icon-star colored"></i>
-                            </span>
-                            <blockquote>
-                                <p>&ldquo;Bộ truyện gắn liền với tuổi thơ của mình. Sách mới mà lại mua lúc được giảm
-                                    giá nữa nên không có gì để chê.&rdquo;</p>
-                            </blockquote>
+            <div class="row text-center animate-box fh5co-heading">
+                <h2>Một số loại sách khác </h2>
+            </div>
+            <figure class="fh5co-figure image-hover text-center animate-box" style="position: relative;display: flex;justify-content: space-around;">
+                <img class=" fadeInUp image-hover " src="images/alice.jpg" style="height: 200px;box-shadow: 0 3px 10px rgb(0 0 0 / 3);" alt="ảnh không tồn tại">
+                <img class=" fadeInUp image-hover" src="images/cavoi.jpg" style="height:200px;box-shadow: 0 3px 10px rgb(0 0 0 / 3);" alt="ảnh không tồn tại">
+                <img class=" fadeInUp image-hover" src="images/ngoisao.jpg" style="height:200px;box-shadow: 0 3px 10px rgb(0 0 0 / 3);" alt="ảnh không tồn tại">
+                <img class=" fadeInUp image-hover" src="images/khuvuonbimat.jpg" style="height:200px;box-shadow: 0 3px 10px rgb(0 0 0 / 3);" alt="ảnh không tồn tại">
+                <img class=" fadeInUp image-hover" src="images/charlotte.jpg" style="height:200px;box-shadow: 0 3px 10px rgb(0 0 0 / 3);" alt="ảnh không tồn tại">
+                <img class=" fadeInUp image-hover" src="images/cotich.jpg" style="height:200px;box-shadow: 0 3px 10px rgb(0 0 0 / 3);" alt="ảnh không tồn tại">
+                <img class=" fadeInUp image-hover" src="images/hoangtube.jpg" style="height:200px;box-shadow: 0 3px 10px rgb(0 0 0 / 3);" alt="ảnh không tồn tại">
+            </figure>
+            <!-- List Sach -->
+            <div class="row">
+                <div class="fh5co-testimonial" style="background: azure; padding: 0;">
+                    <div class="container" style="text-align: center; background: aliceblue;">
+                        <div class="owl-carousel owl-carousel-fullwidth" style="width: 50%; display: inline-block;">
+                            <div class="item">
+                                <div class="testimony-slide active text-center" style="justify-content: space-around; display: flex;">
+                                    <img src="images/chubenhutnhat1.jpg" style="height:200px;width: 130px;box-shadow: 0 3px 10px rgb(0 0 0 / 3);">
+                                    <img src="images/chubenhutnhat2.jpg" style="height:200px;width: 130px;box-shadow: 0 3px 10px rgb(0 0 0 / 3);">
+                                    <img src="images/chubenhutnhat3.jpg" style="height:200px;width: 130px;box-shadow: 0 3px 10px rgb(0 0 0 / 3);">
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="testimony-slide active text-center" style="justify-content: space-around; display: flex;">
+                                    <img src="images/tyquay1.png" style="height:200px;width: 130px;box-shadow: 0 3px 10px rgb(0 0 0 / 3);">
+                                    <img src="images/tyquay2.jpg" style="height:200px;width: 130px;box-shadow: 0 3px 10px rgb(0 0 0 / 3);">
+                                    <img src="images/tyquay3.jpg" style="height:200px;width: 130px;box-shadow: 0 3px 10px rgb(0 0 0 / 3);">
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="testimony-slide active text-center" style="justify-content: space-around; display: flex;">
+                                    <img src="images/alice.jpg" style="height:200px;width: 130px;box-shadow: 0 3px 10px rgb(0 0 0 / 3);">
+                                    <img src="images/cavoi.jpg" style="height:200px;width: 130px;box-shadow: 0 3px 10px rgb(0 0 0 / 3);">
+                                    <img src="images/ngoisao.jpg" style="height:200px;width: 130px;box-shadow: 0 3px 10px rgb(0 0 0 / 3);">
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
 
-        <div id="features">
-            <div class="container">
-                <div class="row text-center fh5co-heading">
-                    <div class="col-md-8 col-md-offset-2">
-                        <h2>Trải nghiệm trên tay sách tại Children's Book</h2>
-                        <p>Hãy đến ngay Children's Book để có được những quyển truyện, quyển sách ưa thích nhé!</p>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-6 animate-box left">
-                        <div class="feature-center">
-                            <span class="icon">
-                                <i class="icon-video"></i>
-                            </span>
-                            <h3>Video</h3>
-                            <video width="500" height="240" controls>
-                                <source src="media/My_Movie.mp4">
-                            </video>
-                        </div>
-                    </div>
-                    <div class="col-md-6 animate-box right ">
-                        <div class="feature-center">
-                            <span class="icon">
-                                <i class="icon-image"></i>
-                            </span>
-                            <h3>Shin-Cậu bé bút chì</h3>
-                            <img class="col-md-7 col-md-push-3" src="images/anh2.jpg" alt="user" width="150px">
-                        </div>
-                    </div>
-                </div>
+        
 
-                <!-- List Sach -->
-                <div class="row">
-                    <div class="fh5co-testimonial" style="background: azure;">
-                        <div class="container" style="text-align: center; background: aliceblue;">
-                            <div class="owl-carousel owl-carousel-fullwidth" style="width: 50%; display: inline-block;">
-                                <div class="item">
-                                    <div class="testimony-slide active text-center">
-                                        <img src="images/anh4.jpg">
-                                    </div>
-                                </div>
-                                <div class="item">
-                                    <div class="testimony-slide active text-center">
-                                        <img src="images/anh5.jpg">
-                                    </div>
-                                </div>
-                                <div class="item">
-                                    <div class="testimony-slide active text-center">
-                                        <img src="images/anh2.jpg">
-                                    </div>
-                                </div>
-                                <div class="item">
-                                    <div class="testimony-slide active text-center">
-                                        <img src="images/anh8.jpg">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-
-        <div id="get-subscribe">
-            <div class="container">
-                <div class="row text-center fh5co-heading">
-                    <div class="col-md-8 col-md-offset-2">
-                        <h2 style="color: aliceblue;">Cảm ơn vì đã mua hàng !</h2>
-                        <p style="color: aliceblue;">Hãy đăng kí để nhận những thông tin về sách mới nhất nhé</p>
-                        <img src="images/logo_tab.png" alt="logo2">
-                    </div>
-                </div>
-                <div class="get-subscribe">
-                    <form class="form-inline">
-                        <div class="col-md-4 col-sm-4">
-                            <div class="form-group">
-                                <label for="name" class="sr-only">Tên</label>
-                                <input type="text" class="form-control" id="name" placeholder="Tên">
-                            </div>
-                        </div>
-                        <div class="col-md-4 col-sm-4">
-                            <div class="form-group">
-                                <label for="email" class="sr-only">Email</label>
-                                <input type="email" class="form-control" id="email" placeholder="Email">
-                            </div>
-                        </div>
-                        <div class="col-md-4 col-sm-4">
-                            <button type="submit" class="btn btn-default btn-block">Gửi</button>
-                        </div>
-                    </form>
-                </div>
-            </div>
-        </div>
 
         <!-- Music -->
         <audio controls autoplay loop="auto" style="display: none">
@@ -438,21 +345,32 @@
             <div class="container">
                 <div class="col-md-12 text-center">
                     <p class="copyright">
-                        <small>&copy; Công nghệ đa phương tiện</small>
-                        <em><small>Designed by <a href="https://www.facebook.com/profile.php?id=100005094768217"
-                                    target="_blank">_duydd_</small>
+                        <!-- Start Map -->
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1862.3667970897773!2d105.84254688355853!3d21.00331349825154!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135ac773026b415%3A0x499b8b613889f78a!2zVHLGsOG7nW5nIMSQ4bqhaSBI4buNYyBYw6J5IEThu7FuZyBIw6AgTuG7mWk!5e0!3m2!1svi!2s!4v1647418957861!5m2!1svi!2s"  height="250" style="border:0;width: 100%;padding-left: 30px;padding-right: 30px;" allowfullscreen="" loading="lazy"></iframe>
+                        <!-- Ena Map -->
+                        <small>&copy; Mọi thông tin cần thiết vui lòng liên hệ các đường link bên dưới</small>
+                        <em><small>Designed by <a href="https://www.facebook.com/bach.nguyenxuan.9615/"
+                                    target="_blank">BachNguyen</small>
                         </em>
                     </p>
                     <ul class="fh5co-social">
 
-                        <li><a href="https://www.facebook.com/profile.php?id=100005094768217" target="_blank"><i
+                        <li><a href="https://www.facebook.com/bach.nguyenxuan.9615/" target="_blank"><i
                                     class="icon-facebook"></i></a></li>
-                        <li><a href="https://twitter.com/cDuy78833025" target="_blank"><i class="icon-twitter"></i></a></li>
-                        <li><a href="https://www.instagram.com/_duydd_/" target="_blank"><i class="icon-instagram"></i></a></li>
+                        <li><a href="#" target="_blank"><i
+                            class="icon-twitter"></i></a></li>
+                        <li><a href="#" target="_blank"><i
+                            class="icon-instagram"></i></a></li>
+                        <li><a href="#" target="_blank"><i
+                            class="icon-youtube"></i></a></li>
+                                    
                     </ul>
                 </div>
             </div>
         </footer>
+
+        <a onclick="topFunction()" id="myBtn" class="btn btn-primary btn-lg btn-hardbound animate-box">Về đầu trang</a> <span class="fh5co-block"></span>
+        
     </div>
 
     <!-- Script -->

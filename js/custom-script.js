@@ -49,3 +49,49 @@ progress.addEventListener('click', (e) =>{
   const progressTime = (e.offsetX / progress.offsetWidth) * video.duration
   video.currentTime = progressTime
 })
+
+// Initialize and add the map
+function initMap() {
+  // The location of Uluru
+  const uluru = { lat: -25.344, lng: 131.036 };
+  // The map, centered at Uluru
+  const map = new google.maps.Map(document.getElementById("map"), {
+    zoom: 4,
+    center: uluru,
+  });
+  // The marker, positioned at Uluru
+  const marker = new google.maps.Marker({
+    position: uluru,
+    map: map,
+  });
+}
+
+//Get the button
+var mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+
+function scrollToBook() {
+  document.body.scrollTop = 800;
+  document.documentElement.scrollTop = 800;
+}
+
+function scrollToBottom() {
+  document.body.scrollTop = 100000;
+  document.documentElement.scrollTop = 1000000;
+}
