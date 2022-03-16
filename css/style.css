@@ -80,18 +80,19 @@ h1, h2, h3, h4, h5, h6, figure {
 
 #fh5co-header {
   /* background: #2c9ecb; */
-  background: rgb(2,0,36);
-  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 0%, rgba(7,59,154,0.788953081232493) 0%, rgba(3,155,218,1) 0%, rgba(201,205,255,1) 100%);
+  /* background: rgb(2,0,36); */
+  opacity: 0.5;
+  /* background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 0%, rgba(7,59,154,0.788953081232493) 0%, rgba(3,155,218,1) 0%, rgba(201,205,255,1) 100%); */
   height: 800px;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: top center;
   position: relative;
-  margin-bottom: 26em;
+  margin-bottom: 6em;
 }
 @media screen and (max-width: 480px) {
   #fh5co-header {
-    margin-bottom: 14em;
+    margin-bottom: 6em;
   }
 }
 #fh5co-header .overlay {
@@ -234,7 +235,7 @@ h1, h2, h3, h4, h5, h6, figure {
 }
 
 #main {
-  margin-top: 14em;
+  margin-top: 6em;
   clear: both;
 }
 @media screen and (max-width: 480px) {
@@ -855,7 +856,7 @@ input[type="range"]::-webkit-slider-thumb {
   -webkit-appearance: none;
   height: 10px;
   width: 10px;
-  background: orangered;
+  background: #2c9ecb;
   cursor: pointer;
 }
 
@@ -871,10 +872,38 @@ input[type="range"]::-webkit-slider-thumb {
 
 .video-progress-filled {
   width: 0;
-  background: orangered;
+  background: #2c9ecb;
 }
 
 .video-player:hover .video-progress {
   height: 20px;
 }
+
+.image1 {
+  position: relative;
+  top: 0;
+  left: 0;
+  box-shadow: 0 3px 10px rgb(0 0 0 / 3);
+}
+.image2 {
+  position: absolute;
+  top: 60px;
+  left: 130px;
+  box-shadow: 0 3px 10px rgb(0 0 0 / 3);
+}
+.image3 {
+  position: absolute;
+  top: 120px;
+  left: 260px;
+  box-shadow: 0 3px 10px rgb(0 0 0 / 3);
+}
+.image-hover{
+  transition: transform .3s;
+}
+.image-hover :hover{
+  transform: scale(1.2);
+  cursor: pointer;
+  z-index: 100;
+}
+
 /*# sourceMappingURL=style.css.map */
