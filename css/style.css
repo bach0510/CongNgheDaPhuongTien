@@ -781,8 +781,8 @@ h1, h2, h3, h4, h5, h6, figure {
 
 .custom-icon{
   display: flex;
-  width: 50%;
-  height:50%;
+  width: 35%;
+  height:35%;
 }
 
 .header-text :hover{
