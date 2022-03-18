@@ -12,7 +12,7 @@ const progressBar = videoPlayer.querySelector('.video-progress-filled')
 playButton.addEventListener('click', (e) => {
   if(video.paused){
     video.play()
-    e.target.textContent = '❚ ❚'
+    e.target.textContent = '❚❚'
   } else {
     video.pause()
     e.target.textContent = '►'
@@ -101,7 +101,11 @@ showSlides(slideIndex);
 
 // Next/previous controls
 function plusSlides(n) {
+  
   showSlides(slideIndex += n);
+  video.pause();
+  e.target.textContent = '►';
+  
 }
 
 // Thumbnail image controls
@@ -121,6 +125,24 @@ function showSlides(n) {
   for (i = 0; i < dots.length; i++) {
       dots[i].className = dots[i].className.replace(" active", "");
   }
-  slides[slideIndex-1].style.display = "block";
+  slides[slideIndex-1].style.display = "flex";
   dots[slideIndex-1].className += " active";
 }
+
+// var slideIndex = 1;
+// showDivs(slideIndex);
+
+// function plusDivs(n) {
+//   showDivs(slideIndex += n);
+// }
+
+// function showDivs(n) {
+//   var i;
+//   var x = document.getElementsByClassName("mySlides");
+//   if (n > x.length) {slideIndex = 1}
+//   if (n < 1) {slideIndex = x.length}
+//   for (i = 0; i < x.length; i++) {
+//     x[i].style.display = "none";  
+//   }
+//   x[slideIndex-1].style.display = "block";  
+// }
