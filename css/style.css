@@ -105,7 +105,7 @@ h1, h2, h3, h4, h5, h6, figure {
   right: 0;
   bottom: 0;
   z-index: 1;
-  background: rgba(0, 0, 0, 0.5);
+  /* background: rgba(0, 0, 0, 0.5); */
 }
 #fh5co-header > .container {
   z-index: 10;
@@ -186,8 +186,15 @@ h1, h2, h3, h4, h5, h6, figure {
   position: relative;
 }
 #fh5co-header .intro .btn:hover {
-  background: #fff !important;
-  color: #000;
+  background: #501c1c !important;
+  color: white;
+}
+.btn:hover {
+  background: #501c1c !important;
+  color: white;
+}
+.btn{
+  color: white;
 }
 #fh5co-header .intro .btn .price {
   position: absolute;
@@ -926,7 +933,7 @@ input[type="range"]::-webkit-slider-thumb {
   font-size: 18px;
   border: none;
   outline: none;
-  background-color: #52d3aa;
+  background-color: black;
   color: white;
   cursor: pointer;
   padding: 15px;
@@ -992,7 +999,7 @@ nav ul li a{
   width: auto;
   margin-top: -22px;
   padding: 16px;
-  color: white;
+  color:  #501c1c;;
   font-weight: bold;
   font-size: 18px;
   transition: 0.6s ease;
