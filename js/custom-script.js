@@ -123,10 +123,10 @@ function showSlides(n) {
       slides[i].style.display = "none";
   }
   for (i = 0; i < dots.length; i++) {
-      dots[i].className = dots[i].className.replace(" active", "");
+      dots[i].className = dots[i].className.replace(" active-dot", "");
   }
   slides[slideIndex-1].style.display = "flex";
-  dots[slideIndex-1].className += " active";
+  dots[slideIndex-1].className += " active-dot";
 }
 
 // var slideIndex = 1;
@@ -146,3 +146,11 @@ function showSlides(n) {
 //   }
 //   x[slideIndex-1].style.display = "block";  
 // }
+
+
+function openMail() {
+  var strWindowFeatures = "location=yes,height=570,width=520,scrollbars=yes,status=yes";
+  var URL = "https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=bachbc0510@gmail.com"
+  var win = window.open(URL, "_blank", strWindowFeatures);
+
+}
