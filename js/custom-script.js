@@ -160,6 +160,7 @@ function showSlides(n) {
     },100)
     
   }
+  else video.pause();
 }
 
 // var slideIndex = 1;
