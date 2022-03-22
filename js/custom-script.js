@@ -1,54 +1,81 @@
-const videoPlayer = document.querySelector('.video-player')
-const video = videoPlayer.querySelector('.video')
-const playButton = videoPlayer.querySelector('.play-button')
-const volume = videoPlayer.querySelector('.volume')
-const currentTimeElement = videoPlayer.querySelector('.current')
-const durationTimeElement = videoPlayer.querySelector('.duration')
-const progress = videoPlayer.querySelector('.video-progress')
-const progressBar = videoPlayer.querySelector('.video-progress-filled')
+// const videoPlayer = document.querySelector('.video-player')
+const video = document.getElementById('video')
+// const playButton = videoPlayer.querySelector('.play-button')
+// const volume = videoPlayer.querySelector('.volume')
+// const currentTimeElement = videoPlayer.querySelector('.current')
+// const durationTimeElement = videoPlayer.querySelector('.duration')
+// const progress = videoPlayer.querySelector('.video-progress')
+// const progressBar = videoPlayer.querySelector('.video-progress-filled')
 
 
-//Play and Pause button
-playButton.addEventListener('click', (e) => {
-  if(video.paused){
-    video.play()
-    e.target.textContent = '❚❚'
-  } else {
-    video.pause()
-    e.target.textContent = '►'
-  }
-})
+// //Play and Pause button
+// playButton.addEventListener('click', (e) => {
+//   if(video.paused){
+//     video.play()
+//     e.target.textContent = '❚❚'
+//     video.muted = false;
+//   } else {
+//     video.pause()
+//     e.target.textContent = '►'
+//   }
+// })
 
-//volume
-volume.addEventListener('mousemove', (e)=> {
-  video.volume = e.target.value
-})
+// // play on reload website
+// video.autoplay = true;
+// video.load();
 
-//current time and duration
-const currentTime = () => {
-  let currentMinutes = Math.floor(video.currentTime / 60)
-  let currentSeconds = Math.floor(video.currentTime - currentMinutes * 60)
-  let durationMinutes = Math.floor(video.duration / 60)
-  let durationSeconds = Math.floor(video.duration - durationMinutes * 60)
+// //volume
+// volume.addEventListener('mousemove', (e)=> {
+//   video.volume = e.target.value
+// })
 
-  currentTimeElement.innerHTML = `${currentMinutes}:${currentSeconds < 10 ? '0'+currentSeconds : currentSeconds}`
-  durationTimeElement.innerHTML = `${durationMinutes}:${durationSeconds}`
+// //current time and duration
+// const currentTime = () => {
+//   let currentMinutes = Math.floor(video.currentTime / 60)
+//   let currentSeconds = Math.floor(video.currentTime - currentMinutes * 60)
+//   let durationMinutes = Math.floor(video.duration / 60)
+//   let durationSeconds = Math.floor(video.duration - durationMinutes * 60)
+
+//   currentTimeElement.innerHTML = `${currentMinutes}:${currentSeconds < 10 ? '0'+currentSeconds : currentSeconds}`
+//   durationTimeElement.innerHTML = `${durationMinutes}:${durationSeconds}`
+// }
+
+// video.addEventListener('timeupdate', currentTime)
+
+
+// //Progress bar
+// video.addEventListener('timeupdate', () =>{
+//   const percentage = (video.currentTime / video.duration) * 100
+//   progressBar.style.width = `${percentage}%`
+// })
+
+// //change progress bar on click
+// progress.addEventListener('click', (e) =>{
+//   const progressTime = (e.offsetX / progress.offsetWidth) * video.duration
+//   video.currentTime = progressTime
+// })
+
+function isInViewport(el) {
+  const rect = el.getBoundingClientRect();
+  return (
+      rect.top >= 0 &&
+      rect.left >= 0 &&
+      rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+      rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+
+  );
 }
 
-video.addEventListener('timeupdate', currentTime)
+document.addEventListener('scroll', function () {
+    if(isInViewport(video)){
+      video.play();
+    } 
+    else video.pause();
 
 
-//Progress bar
-video.addEventListener('timeupdate', () =>{
-  const percentage = (video.currentTime / video.duration) * 100
-  progressBar.style.width = `${percentage}%`
-})
-
-//change progress bar on click
-progress.addEventListener('click', (e) =>{
-  const progressTime = (e.offsetX / progress.offsetWidth) * video.duration
-  video.currentTime = progressTime
-})
+}, {
+  passive: true
+});
 
 // Initialize and add the map
 function initMap() {
@@ -103,8 +130,8 @@ showSlides(slideIndex);
 function plusSlides(n) {
   
   showSlides(slideIndex += n);
-  video.pause();
-  e.target.textContent = '►';
+ video.pause();
+  // e.target.textContent = '►';
   
 }
 
@@ -127,6 +154,12 @@ function showSlides(n) {
   }
   slides[slideIndex-1].style.display = "flex";
   dots[slideIndex-1].className += " active-dot";
+  if (slideIndex == 1){
+    setTimeout(()=> {
+      video.play();
+    },100)
+    
+  }
 }
 
 // var slideIndex = 1;
@@ -154,3 +187,4 @@ function openMail() {
   var win = window.open(URL, "_blank", strWindowFeatures);
 
 }
+

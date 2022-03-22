@@ -72,12 +72,14 @@
                             <!-- Full-width images with number and caption text -->
                             <div class="mySlides " style="display: flex; height: 300px;justify-content: space-around;">
                                     <div class="video-player animate-box" style="display: flex;width: 569px;">
-                                        <video
-                                        src="media/videodemo.mp4"
-                                        class="video"
+                                        <video autoplay muted playsinline loop controls
+                                            src="media/videodemo.mp4"
+                                            class="video"
+                                            id="video"
+                                            oncanplay="this.muted=true"
                                         ></video>
                                 
-                                        <div class="player-controls">
+                                        <!-- <div class="player-controls">
                                         <div class="video-progress">
                                             <div class="video-progress-filled"></div>
                                         </div>
@@ -96,7 +98,7 @@
                                         <div class="time">
                                             <span class="current">0:00</span> / <span class="duration">0:00</span>
                                         </div>
-                                        </div>
+                                        </div> -->
                                     </div>
                             </div>
                         
