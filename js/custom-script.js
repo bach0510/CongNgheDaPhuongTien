@@ -45,8 +45,8 @@ const video = document.getElementById('video')
 
 // //Progress bar
 // video.addEventListener('timeupdate', () =>{
-//   const percentage = (video.currentTime / video.duration) * 100
-//   progressBar.style.width = `${percentage}%`
+//   const percentage = (video.currentTime / video.duration) * 100 
+//   progressBar.style.width = `${percentage}%`fadeInUp 
 // })
 
 // //change progress bar on click
@@ -65,17 +65,76 @@ function isInViewport(el) {
 
   );
 }
-
+var all = document.getElementsByClassName("image1");
 document.addEventListener('scroll', function () {
     if(isInViewport(video)){
       video.play();
     } 
     else video.pause();
 
+    // setTimeout(()=>{
+    //   removeClass(".image1","animate-box");
+    //   removeClass(".image1","fadeInUp");
+    //   removeClass(".image1","animated-fast");
+    // },100)
+
+    // setTimeout(()=>{
+    //   removeClass(".image2","animate-box");
+    // removeClass(".image2","fadeInUp");
+    // removeClass(".image2","animated-fast");
+    // },100)
+
+    // setTimeout(()=>{
+    //   removeClass(".image3","animate-box");
+    // removeClass(".image3","fadeInUp");
+    // removeClass(".image3","animated-fast");
+    // },100)
+    
+
+    
+
+    
+
+    // $(".image1").removeClass("animate-box");
+    // $(".image1").removeClass("fadeInUp");
+    // $(".image1").removeClass("animated-fast");
+
+    // $(".image2").removeClass("animate-box");
+    // $(".image2").removeClass("fadeInUp");
+    // $(".image2").removeClass("animated-fast");
+
+    // $(".image3").removeClass("animate-box");
+    // $(".image3").removeClass("fadeInUp");
+    // $(".image3").removeClass("animated-fast");
+
+    // for (var i=0; i < all.length; i++) {
+    //   console.log(all[i])
+    //   if(isInViewport(all[i]))
+    //   {
+    //     setTimeout(()=>{
+    //       all[i]?.classList.remove("animate-box");
+    //       all[i]?.classList.remove("fadeInUp");
+    //       all[i]?.classList.remove("animated-fast");
+    //     },3000)
+        
+    //   } 
+    // }
 
 }, {
   passive: true
 });
+
+function removeClass(selector, klass) {
+  var elems = document.querySelectorAll(selector);
+
+  for (var i = elems.length; i--;) {
+    if(isInViewport(elems[i])){
+        var reg = new RegExp("(?:^|\\s)"+ klass +"(?!\\S)", "gi");
+        elems[i].className = elems[i].className.replace(reg, "");
+    }
+      
+  }
+}
 
 // Initialize and add the map
 function initMap() {
